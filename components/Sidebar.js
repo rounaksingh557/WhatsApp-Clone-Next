@@ -1,7 +1,18 @@
+import { Avatar } from "@material-ui/core";
+import styled from "styled-components";
+
 function Sidebar() {
-  return <div></div>;
+  return (
+    <Container>
+      <Header>
+        <UserAvatar />
+      </Header>
+    </Container>
+  );
 }
 
 export default Sidebar;
 
-const container = styled.div``;
+const Container = styled.div``;
+const Header = styled.div``;
+const UserAvatar = styled(Avatar)``;

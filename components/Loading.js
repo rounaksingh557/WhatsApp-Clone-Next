@@ -4,7 +4,9 @@ import { Backdrop } from "@material-ui/core";
 function Loading() {
   return (
     <div>
-      <center>
+      <center
+        style={{ display: "grid", placeItems: "center", height: "100vh" }}
+      >
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

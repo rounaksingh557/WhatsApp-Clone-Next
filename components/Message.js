@@ -1,15 +1,20 @@
+import moment from "moment";
 import styled from "styled-components";
 import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 function Message({ user, message }) {
   const [userLoggedIn] = useAuthState(auth);
-
-
+  const TypeOfMessage = user === userLoggedIn.email ? Sender : Reciever;
 
   return (
     <Container>
-      <p>{message.message}</p>
+      <TypeOfMessage>
+        {message.message}
+        <Timestamp>
+          {message.timestamp ? moment(message.timestamp).format("LT") : "..."}
+        </Timestamp>
+      </TypeOfMessage>
     </Container>
   );
 }
@@ -25,5 +30,25 @@ const MessageElement = styled.p`
   min-width: 60px;
   padding-bottom: 26px;
   position: relative;
-  text-aling: right;
+  text-align: right;
+`;
+
+const Sender = styled(MessageElement)`
+  margin-left: auto;
+  background-color: #dcf8c6;
+`;
+
+const Reciever = styled(MessageElement)`
+  background-color: whitesmoke;
+  text-align: left;
+`;
+
+const Timestamp = styled.span`
+  color: gray;
+  padding: 10px;
+  font-size: 9px;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  right: 0;
 `;

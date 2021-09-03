@@ -15,7 +15,7 @@ function Chat({ chat, messages }) {
       </Head>
       <Sidebar />
       <ChatContainer>
-        <ChatScreen />
+        <ChatScreen chat={chat} messages={messages} />
       </ChatContainer>
     </Container>
   );
@@ -46,8 +46,6 @@ export async function getServerSideProps(context) {
     ...chatRes.data(),
   };
 
-  console.log(chat, messages);
-
   return {
     props: {
       messages: JSON.stringify(messages),
@@ -61,5 +59,6 @@ const Container = styled.div`
 `;
 const ChatContainer = styled.div`
   flex: 1;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 `;

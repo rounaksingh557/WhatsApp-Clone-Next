@@ -59,6 +59,13 @@ const Container = styled.div`
 `;
 const ChatContainer = styled.div`
   flex: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: scroll;
+  height: 100vh;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  --ms-overflow-style: none;
+  scrollbar-width: none;
 `;

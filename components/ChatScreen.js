@@ -82,6 +82,8 @@ function ChatScreen({ chat, messages }) {
     scrollToBottom();
   };
 
+  const BringEmoji = () => {};
+
   const recipient = recipientSnapshot?.docs?.[0]?.data();
   const recipientEmail = getRecipientEmail(chat.users, user);
 
@@ -124,7 +126,9 @@ function ChatScreen({ chat, messages }) {
       </MessageContainer>
 
       <InputContainer>
-        <InsertEmoticonIcon />
+        <IconButton>
+          <InsertEmoticonIcon onClick={BringEmoji} />
+        </IconButton>
         <Input
           placeholder="Type here to message"
           value={input}
@@ -133,7 +137,12 @@ function ChatScreen({ chat, messages }) {
         <button hidden disabled={!input} type="submit" onClick={sendMessage}>
           Send Messages
         </button>
-        <SendRoundedIcon type="submit" onClick={sendMessage}></SendRoundedIcon>
+        <IconButton>
+          <SendRoundedIcon
+            type="submit"
+            onClick={sendMessage}
+          ></SendRoundedIcon>
+        </IconButton>
         <MicIcon />
       </InputContainer>
     </Container>

@@ -43,7 +43,7 @@ function Sidebar() {
     <Container>
       <Header>
         <UserAvatar src={user.photoURL} onClick={() => auth.signOut()} />
-        <UseravatarName>{user.displayName} 🎉</UseravatarName>
+        <UseravatarName>{user.displayName} 👋</UseravatarName>
         <IconsContainer>
           <IconButton>
             <ChatIcon />

@@ -43,6 +43,7 @@ function Sidebar() {
     <Container>
       <Header>
         <UserAvatar src={user.photoURL} onClick={() => auth.signOut()} />
+        <UseravatarName>{user.displayName} 🎉</UseravatarName>
         <IconsContainer>
           <IconButton>
             <ChatIcon />
@@ -57,7 +58,6 @@ function Sidebar() {
         <SearchInput placeholder="Search in chats" />
       </Search>
       <SidebarButton onClick={createChat}>Start a New chat</SidebarButton>
-      {/* Lists of Chats */}
       {chatsSnapshot?.docs.map((chat) => (
         <Chat key={chat.id} id={chat.id} users={chat.data().users} />
       ))}
@@ -120,3 +120,5 @@ const UserAvatar = styled(Avatar)`
   }
 `;
 const IconsContainer = styled.div``;
+
+const UseravatarName = styled.h3``;

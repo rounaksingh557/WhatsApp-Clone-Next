@@ -1,4 +1,5 @@
-import { Circle } from "better-react-spinkit";
+import Spinner from "react-spinner-material";
+import React, { Component } from "react";
 
 function Loading() {
   return (
@@ -14,7 +15,13 @@ function Loading() {
             style={{ marginBottom: 10 }}
             height={200}
           />
-          <Circle color="#3CBC28" size={60} />
+          <Spinner
+            radius={50}
+            color="#3CBC28"
+            size={60}
+            stroke={3}
+            visible={true}
+          />
         </div>
       </center>
     </div>

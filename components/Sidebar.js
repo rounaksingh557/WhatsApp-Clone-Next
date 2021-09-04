@@ -121,4 +121,6 @@ const UserAvatar = styled(Avatar)`
 `;
 const IconsContainer = styled.div``;
 
-const UseravatarName = styled.h3``;
+const UseravatarName = styled.p`
+  word-break: break-word;
+`;

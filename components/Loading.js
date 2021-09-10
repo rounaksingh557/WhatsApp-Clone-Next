@@ -17,7 +17,7 @@ function Loading() {
           />
           <Spinner
             radius={50}
-            color="#3CBC28"
+            color="#3C4043"
             size={60}
             stroke={3}
             visible={true}

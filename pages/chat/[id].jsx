@@ -1,10 +1,13 @@
+// Modules Import
 import Head from "next/head";
 import styled from "styled-components";
+import { useAuthState } from "react-firebase-hooks/auth";
+
+// Files Import
 import Sidebar from "../../components/Sidebar";
 import ChatScreen from "../../components/ChatScreen";
-import { auth, db } from "../../firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
 import getRecipientEmail from "../../utils/getRecipientEmail";
+import { auth, db } from "../../Config/FirebaseConfig";
 
 function Chat({ chat, messages }) {
   const [user] = useAuthState(auth);

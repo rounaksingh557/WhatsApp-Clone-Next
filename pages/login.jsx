@@ -1,7 +1,11 @@
+// Modules Import
 import Head from "next/head";
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
-import { auth, provider } from "../firebase";
+
+// File Import
+import { auth, provider } from "../Config/FirebaseConfig";
+
 function Login() {
   const signIn = () => {
     auth.signInWithPopup(provider).catch(alert);

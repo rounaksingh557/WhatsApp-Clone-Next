@@ -1,8 +1,10 @@
+// Modules Import
 import Head from "next/head";
+import { useAuthState } from "react-firebase-hooks/auth";
+
+// File Import
+import { auth } from "../Config/FirebaseConfig";
 import Sidebar from "../components/Sidebar";
-import { useAuthState, UseAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../firebase";
-import firebase from "firebase";
 
 export default function Home() {
   const [user] = useAuthState(auth);

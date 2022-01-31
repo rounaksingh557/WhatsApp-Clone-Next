@@ -1,13 +1,15 @@
-import { Avatar, Button, IconButton } from "@material-ui/core";
 import styled from "styled-components";
+import * as EmailValidator from "email-validator";
+import { Avatar, Button, IconButton } from "@material-ui/core";
+import { useCollection } from "react-firebase-hooks/firestore";
+import { useAuthState } from "react-firebase-hooks/auth";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ChatIcon from "@material-ui/icons/Chat";
 import SearchIcon from "@material-ui/icons/Search";
-import * as EmailValidator from "email-validator";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useCollection } from "react-firebase-hooks/firestore";
-import { auth, db } from "../firebase";
-import Chat from "../components/Chat";
+
+// Files Import
+import { auth, db } from "../Config/FirebaseConfig";
+import Chat from "./Chat";
 
 function Sidebar() {
   const [user] = useAuthState(auth);

@@ -73,7 +73,7 @@
 
 ## About The Project
 
-![product-screenshot]
+[![Product Name Screen Shot][product-screenshot]](https://github.com/rounaksingh557/WhatsApp-Clone-Next/blob/main/images/Screenshot.png)
 
 It is a clone of WhatsApp with backend support.
 

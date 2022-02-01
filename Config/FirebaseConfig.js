@@ -24,18 +24,24 @@ const app = !firebase.apps.length
  * `db` provides access to firebase firestore database services.
  *
  * Firebase version `8.10.0` is used.
+ *
+ * @see https://www.npmjs.com/package/firebase/v/8.10.1
  */
 const db = app.firestore();
 /**
  * `auth` provides access to firebase authentication services.
  *
  *  Firebase version `8.10.0` is used.
+ *
+ * @see https://www.npmjs.com/package/firebase/v/8.10.1
  */
 const auth = app.auth();
 /**
  * `provider` provides access to Google authentication granter services.
  *
  *  Firebase version `8.10.0` is used.
+ *
+ * @see https://www.npmjs.com/package/firebase/v/8.10.1
  */
 const provider = new firebase.auth.GoogleAuthProvider();
 

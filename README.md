@@ -75,7 +75,7 @@
 
 ![product-screenshot]
 
-It is a clone of WhatsApp with backend support.
+### It is a clone of WhatsApp with backend support.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

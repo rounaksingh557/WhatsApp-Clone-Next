@@ -73,7 +73,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![product-screenshot]
 
 It is a clone of WhatsApp with backend support.
 

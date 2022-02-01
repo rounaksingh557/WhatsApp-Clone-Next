@@ -6,6 +6,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 // File Import
 import { auth } from "../Config/FirebaseConfig";
 
+/**
+ *
+ * @returns Provides messages with correct time format.
+ */
+
 function Message({ user, message }) {
   const [userLoggedIn] = useAuthState(auth);
   const TypeOfMessage = user === userLoggedIn.email ? Sender : Reciever;

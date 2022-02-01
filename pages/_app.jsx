@@ -11,6 +11,10 @@ import { auth, db } from "../Config/FirebaseConfig";
 // Styles Import
 import "../styles/globals.css";
 
+/**
+ *
+ * @returns  process Google User profile
+ */
 function MyApp({ Component, pageProps }) {
   const [user, loading] = useAuthState(auth);
 

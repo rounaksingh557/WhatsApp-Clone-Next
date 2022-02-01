@@ -9,6 +9,10 @@ import ChatScreen from "../../components/ChatScreen";
 import getRecipientEmail from "../../utils/getRecipientEmail";
 import { auth, db } from "../../Config/FirebaseConfig";
 
+/**
+ *
+ * @returns Enables chat with the user, also changes the title and then accepts previous chats. The whole page is server side rendered.
+ */
 function Chat({ chat, messages }) {
   const [user] = useAuthState(auth);
   return (

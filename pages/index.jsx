@@ -6,6 +6,10 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../Config/FirebaseConfig";
 import Sidebar from "../components/Sidebar";
 
+/**
+ *
+ * @returns Webpage Head and It's Details.
+ */
 export default function Home() {
   const [user] = useAuthState(auth);
   return (

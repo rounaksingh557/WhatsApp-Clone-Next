@@ -6,6 +6,10 @@ import { Button } from "@material-ui/core";
 // File Import
 import { auth, provider } from "../Config/FirebaseConfig";
 
+/**
+ *
+ * @returns This is the login page of the App.
+ */
 function Login() {
   const signIn = () => {
     auth.signInWithPopup(provider).catch(alert);

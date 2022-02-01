@@ -11,6 +11,11 @@ import SearchIcon from "@material-ui/icons/Search";
 import { auth, db } from "../Config/FirebaseConfig";
 import Chat from "./Chat";
 
+/**
+ *
+ * @returns All sidebar functions, displays `chats`,`Start a new chat`.
+ */
+
 function Sidebar() {
   const [user] = useAuthState(auth);
 

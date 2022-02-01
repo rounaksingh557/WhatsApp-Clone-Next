@@ -18,6 +18,11 @@ import Message from "../components/Message";
 import { auth, db } from "../Config/FirebaseConfig";
 import getRecipientEmail from "../utils/getRecipientEmail";
 
+/**
+ *
+ * @returns Displays Messages, time details and adds that scrolling effects.
+ */
+
 function ChatScreen({ chat, messages }) {
   const [user] = useAuthState(auth);
   const [input, setInput] = useState("");

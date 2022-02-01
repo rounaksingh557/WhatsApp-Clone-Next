@@ -73,6 +73,8 @@
 
 ## About The Project
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 It is a clone of WhatsApp with backend support.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -213,3 +215,4 @@ Thanks for checking my project. Take a look at these references.
 [issues-url]: https://github.com/rounaksingh557/WhatsApp-Clone-Next/issues
 [license-shield]: https://img.shields.io/github/license/rounaksingh557/WhatsApp-Clone-Next.svg?style=for-the-badge
 [license-url]: https://github.com/rounaksingh557/WhatsApp-Clone-Next/blob/master/LICENSE.txt
+[product-screenshot]: images/screenshot.png
